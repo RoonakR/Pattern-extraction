@@ -61,7 +61,7 @@ def gmm_calculator(data, n_components=2):
     return model
 
 
-data, step, nw, stepFloat = get_dataset('//surrey.ac.uk/personal/HS229/rr00489/.System/Desktop/Exported Data/wind.csv')
+data, step, nw, stepFloat = get_dataset('.../wind.csv')
 d = DataFrame(columns=['wind_speed', 'wind_vane'])
 for i in range(0, data.shape[0]):
     if data['type'][i] == 'wind_speed':
